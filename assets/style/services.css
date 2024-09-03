@@ -1,20 +1,19 @@
 
-.blog {
-    padding-bottom: 100px;
-}
+
 .blog .single-blog {
     display: flex;
-     gap: 30px;
+    gap: 2rem;
+    width: 80%;
 }
 
-.blog .single-blog img{
-    width: 450px;
-}
+
 
 
 .blog .single-blog .text{
-    padding-top: 30px;
-
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
 }
 .blog .single-blog h1 {
     font-size: 18px;
