@@ -167,7 +167,7 @@ h6 {
 }
 @media screen and (max-width: 768px) {
   .main-header .container .main-title{
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 /* Media query for medium screens  */
