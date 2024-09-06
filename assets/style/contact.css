@@ -1,5 +1,5 @@
 .contact-us-section {
-    margin-bottom: 7rem;
+    background-color: var(--white-color);
 }
 
 .contact-us-section .container {
@@ -109,6 +109,42 @@
     height: 100%;
 }
 
-.footer-contact {
-    margin: 0;
+.map-section {
+    padding: 0;
+}
+
+
+/* Media query for small screens  */
+
+@media screen and (max-width: 768px) {
+    .contact-us-section .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .contact-us-section .container .contact-title {
+        font-size: 1.4rem;
+    }
+
+    .info-text {
+        font-size: 14px;
+    }
+
+    .contact-info .informations .info::after {
+        left: -3.2%;
+    }
+}
+
+/* Media query for medium screens  */
+@media only screen and (max-width: 991px) {
+    .contact-us-section .container {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1303px) {
+    .contact-us-section .container {
+        width: 80%;
+    }
 }
