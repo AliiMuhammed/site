@@ -440,6 +440,7 @@ padding: 0px;
 width: 100%;
 }
  .orders {
+ 
   display: grid;
   grid-template-columns: 50% 50%;
   
@@ -454,41 +455,51 @@ width: 100%;
 .order .hours 
 {
 margin-left: -10px;
+margin-bottom: 30px;
 }
   
 .order .left {
+  padding: 80px 0px;
     background-color:#7B66FF ;
-text-align: end;
+
 
 }
 
 .order .right {
+  padding: 80px 180px 80px 40px;
     background-color:#64B4F1 ;
 }
 
 .order .appointemnts {
    margin-left: 170px;
     text-align: start;
+
 }
   
 
-.order .appointemnts .row {
+.order .appointemnts .appointemnt {
+  display: flex;
     border-bottom: 1px solid rgb(151, 141, 141);
     justify-content: space-between;
-    width: 300px;
+    width: 400px;
     padding: 6px 0px;
 
 
 }
 
-.order .appointemnts .row:last-child{
+.order .appointemnts .appointemnt:last-child{
 border-bottom: none;
 }
 
-.order .appointemnts .row .col-auto {
-    padding: 0px;
+.order .appointemnts .appointemnt .col {
+    padding: 5px 0px;
     font-size: 12px;
 
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-right h1{
