@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="./assets/style/index.css" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
+  <link rel="stylesheet" href="./assets/style/home.css" />
+  <link rel="stylesheet" href="./assets/style/main.css">
+ 
+</head>
+
+<body>
 
 
-    <nav>
-      <header class="d-flex justify-content-around">
-        <img src="./assets/images/home/logo (1).png" alt="logo" />
-        <ul class="d-flex">
-          <li>
+
+  <header>
+
+    <div class="top-header">
+      <div class="container">
+        <img src="assets/images/home/logo (1).png" alt="">
+        <div class="contact">
+          <div class="col">
             <img src="./assets/images/home/1.png" alt="phone" />
-            <p>
+            <span>
               Number : <br />
-              <span>+880123456789</span>
-            </p>
-          </li>
-          <li>
-            <img src="./assets/images/home/2.png" alt="phone" />
-            <p>
+              <b>+880123456789</b>
+            </span>
+          </div>
+
+          <div class="col"> <img src="./assets/images/home/2.png" alt="phone" />
+            <span>
               Email : <br />
-              <span>Mukti@gmail.com</span>
-            </p>
-          </li>
-          <li>
-            <img src="./assets/images/home/3.png" alt="phone" />
-            <p>
+              <b>Mukti@gmail.com</b>
+            </span>
+          </div>
+
+          <div class="col"><img src="./assets/images/home/3.png" alt="phone" />
+            <span>
               Address : <br />
-              <span>12 North West New York</span>
-            </p>
-          </li>
-        </ul>
-      </header>
-      <footer class="bg-primary d-flex justify-content-start  align-items-center">
-        <ul class="d-flex gap-3 fs-5" >
+              <b>12 North West New York</b>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottem-nav">
+      <div class="container">
+        <ul>
+
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Departments</a></li>
           <li><a href="doctors.html">Doctors</a></li>
@@ -57,184 +61,202 @@
           <li><a href="#">Blog</a></li>
           <li><a href="about-us.html">About us</a></li>
           <li><a href="#">Contact Us</a></li>
-        </ul>
-      </footer>
-    </nav>
 
-    <div class="contaner-img">
-      <img class="bg-img" src="./assets/images/home/1.jpg" alt="">
+        </ul>
+      </div>
+    </div>
+    </div>
+  </header>
+
+
+
+  <div class="landing">
+    <div class="container">
       <div class="content">
-        <h4 >Best Medical Clinic</h4>
-        <p class="fw-bold ">
-          <span class="text-primary">Bringing Health</span>
-          To Life For The Whole Family...
-        </p>
+        <h4>Best Medical Clinic</h4>
+        <div>
+          <b class="blue-color">Bringing Health</b>
+          <b>To Life For The Whole Family...</b>
+        </div>
 
         <button class="btn btn-primary">Get Appoinments »</button>
       </div>
     </div>
+  </div>
 
 
-    <div class="contaner-sp  pt-5">
- 
+  <div class="specialized">
 
-      <div class="text text-center mb-4">
+
+
+    <div class="container">
+
+
+      <div class="text-section ">
         <p>We Offer Specialized</p>
         <h1>Orthopedics To Meet Your Needs</h1>
       </div>
-      <div class="container">
-        <div class="row g-3">
 
-          <div class="col-12 col-md-6 col-lg-3">
-          <div class="card">
-            <img src="./assets/images/home/medical-symbol.png" alt="">
-            <div class="card-body">
-              
-              <div class="card-title fs-3 fw-bold m-2 ">
-                Medical Treatment
-              </div>
-              <div class="card-text m-2 ">
-                Lorem ipsum dolor sit amete
-                consectetur adipisicing elite.
-                vlote optio animi?
-              </div>
-              <div class="card-text fw-bold fs-5 m-2">Read More »</div>
-            </div>
-          </div>  
+      <div class="specialisations">
+
+
+
+
+        <div class="card">
+          <img src="./assets/images/home/medical-symbol.png" alt="">
+          <div class="card-body">
+
+            <b class="card-title fs-3 fw-bold m-2 ">
+              Medical Treatment
+            </b>
+
+            <p class="card-text m-2 ">
+              Lorem ipsum dolor sit amete
+              consectetur adipisicing elite.
+              vlote optio animi?
+            </p>
+
+            <span class="card-text fw-bold fs-5 m-2">Read More »</span>
           </div>
-    
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card">
-              <img src="./assets/images/home/delivery-truck.png" alt="">
-              <div class="card-body">
-                
-                <div class="card-title fs-3 fw-bold m-2">
-                  Medical Treatment
-                </div>
-                <div class="card-text m-2 ">
-                  Lorem ipsum dolor sit amete
-                  consectetur adipisicing elite.
-                  vlote optio animi?
-                </div>
-                <div class="card-text fw-bold fs-5 m-2">Read More »</div>
-              </div>
-            </div>  
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card">
-                <img src="./assets/images/home/hospital-building.png" alt="">
-                <div class="card-body">
-                  
-                  <div class="card-title fs-3 fw-bold m-2">
-                    Medical Treatment
-                  </div>
-                  <div class="card-text m-2 ">
-                    Lorem ipsum dolor sit amete
-                    consectetur adipisicing elite.
-                    vlote optio animi?
-                  </div>
-                  <div class="card-text fw-bold fs-5 m-2">Read More »</div>
-                </div>
-              </div>  
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card">
-                  <img src="./assets/images/home/doctor.png" alt="">
-                  <div class="card-body">
-                    
-                    <div class="card-title fs-3 fw-bold m-2">
-                      Medical Treatment
-                    </div>
-                    <div class="card-text m-2 ">
-                      Lorem ipsum dolor sit amete
-                      consectetur adipisicing elite.
-                      vlote optio animi?
-                    </div>
-                    <div class="card-text fw-bold fs-5 m-2">Read More »</div>
-                  </div>
-                </div>  
-                </div>
-    
         </div>
+
+
+        <div class="card">
+          <img src="./assets/images/home/delivery-truck.png" alt="">
+          <div class="card-body">
+
+            <b class="card-title fs-3 fw-bold m-2">
+              Medical Treatment
+            </b>
+            <p class="card-text m-2 ">
+              Lorem ipsum dolor sit amete
+              consectetur adipisicing elite.
+              vlote optio animi?
+            </p>
+
+            <span class="card-text fw-bold fs-5 m-2">Read More »</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/home/hospital-building.png" alt="">
+          <div class="card-body">
+
+            <b class="card-title fs-3 fw-bold m-2">
+              Medical Treatment
+            </b>
+
+            <p class="card-text m-2 ">
+              Lorem ipsum dolor sit amete
+              consectetur adipisicing elite.
+              vlote optio animi?
+            </p>
+            <span class="card-text fw-bold fs-5 m-2">Read More »</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/home/doctor.png" alt="">
+          <div class="card-body">
+
+            <b class="card-title fs-3 fw-bold m-2">
+              Medical Treatment
+            </b>
+            <p class="card-text m-2 ">
+              Lorem ipsum dolor sit amete
+              consectetur adipisicing elite.
+              vlote optio animi?
+            </p>
+            <span class="card-text fw-bold fs-5 m-2">Read More »</span>
+          </div>
+        </div>
+
+
+</div>
       </div>
     </div>
+
 
 
 
 
     <section class="Best-centers">
       <div class="container">
-        <div class="text text-center mb-4 pt-5">
+        <div class="text-section">
           <p>we are the</p>
           <h1>best our departments centers</h1>
         </div>
-        <div class="row gap-1 justify-content-center">
-          <img class="icon col" src="././assets/images/home/01.png" alt="" />
-          <img class="icon col" src="././assets/images/home/01.png" alt="" />
-          <img class="icon col" src="././assets/images/home/03.png" alt="" />
-          <img class="icon col" src="././assets/images/home/04.png" alt="" />
-          <img class="icon col" src="././assets/images/home/05.png" alt="" />
-          <img class="icon col" src="././assets/images/home/06.png" alt="" />
-          <img class="icon col" src="././assets/images/home/07.png" alt="" />
-          <img class="icon col" src="././assets/images/home/08.png" alt="" />
-          <img class="icon col" src="././assets/images/home/09.png" alt="" />
-          <img class="icon col" src="././assets/images/home/01.png" alt="" />
+        <div class="icons ">
+          <img class="icon " src="././assets/images/home/01.png" alt="" />
+          <img class="icon " src="././assets/images/home/01.png" alt="" />
+          <img class="icon " src="././assets/images/home/03.png" alt="" />
+          <img class="icon " src="././assets/images/home/04.png" alt="" />
+          <img class="icon " src="././assets/images/home/05.png" alt="" />
+          <img class="icon " src="././assets/images/home/06.png" alt="" />
+          <img class="icon " src="././assets/images/home/07.png" alt="" />
+          <img class="icon " src="././assets/images/home/08.png" alt="" />
+          <img class="icon " src="././assets/images/home/09.png" alt="" />
+          <img class="icon " src="././assets/images/home/01.png" alt="" />
         </div>
-        <div class="speciality-rhinology d-flex offset-2 mt-2 gap-4">
-          <div class="left p-3">
-            <b class="">speciality rhinology 1</b>
-            <p class="mb-3">
+        <div class="speciality-rhinology">
+          <div class="left ">
+            <b >speciality rhinology 1</b>
+            <p >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
               iure tempore ullam aperiam! Laboriosam, ipsa nobis velit,
               doloribus quis quaerat tempore enim ratione iste aperiam
-              praesentium. Veniam sapiente quae.
+              praesentium. Veniam sapiente qua Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus magni ducimus maxime voluptatem tenetur iste quia necessitatibus molestiae mollitia magnam voluptatum neque nam, blanditiis sit modi sunt, nulla suscipit numquam.
             </p>
-            <div class="services gap-5 d-flex mb-2">
-              <div class="line d-flex flex-column">
+            <div class="services">
+    
                 <span> qualified doctors</span>
                 <span> qualified doctors</span>
                 <span> qualified doctors</span>
-              </div>
-              <div class="line d-flex flex-column">
+       
+             
                 <span> qualified doctors</span>
                 <span> qualified doctors</span>
                 <span> qualified doctors</span>
-              </div>
+              
             </div>
-            <button>Appointment Now</button>
+            <button class="btn">Appointment Now >></button>
           </div>
           <div class="right">
-            <img src="./assets/images/home/01 (1).jpg" alt="" />
+            <img src="./assets/images/home/mic2.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
 
     <section class="info">
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-auto d-flex align-items-center gap-4">
+      <div class="container">
+        <div class="informtions">
+          <div class="single-info">
             <i class="fa-solid fa-hospital-user"></i>
-            <div class="details d-flex flex-column">
+            <div class="details ">
               <strong>152+</strong>
               <span>patients every day</span>
             </div>
           </div>
-          <div class="col-auto d-flex align-items-center gap-4">
+
+
+
+
+          <div class="single-info">
             <i class="fa-solid fa-hospital-user"></i>
-            <div class="details d-flex flex-column">
+            <div class="details">
               <strong>122+</strong>
               <span>patients every day</span>
             </div>
           </div>
-          <div class="col-auto d-flex align-items-center gap-4">
+          <div class="single-info">
             <i class="fa-solid fa-hospital-user"></i>
-            <div class="details d-flex flex-column">
+            <div class="details ">
               <strong>3+</strong>
               <span>patients every day</span>
             </div>
           </div>
-          <div class="col-auto d-flex align-items-center gap-4">
+          <div class="single-info">
             <i class="fa-solid fa-hospital-user"></i>
             <div class="details d-flex flex-column">
               <strong>105+</strong>
@@ -246,13 +268,14 @@
     </section>
 
     <section class="Doctors">
-      <div class="container-fluid p-5">
-        <div class="text text-center mb-4">
+      <div class="container ">
+        <div class="text-section">
           <p>meet our</p>
           <h1>mukti professional docrors</h1>
         </div>
-        <div class="row justify-content-center gap-0">
-          <div class="col-auto">
+
+        <div class="docs">
+          <div class="col">
             <img src="./assets/images/home/01 (1).jpg" alt="" />
             <div class="mid first">
               <strong>dr.Jasson Kovalsky</strong>
@@ -264,7 +287,7 @@
             </div>
           </div>
 
-          <div class="col-auto">
+          <div class="col">
             <img src="./assets/images/home/02 (1).jpg" alt="" />
             <div class="mid second">
               <strong>dr.Jasson Kovalsky</strong>
@@ -276,7 +299,7 @@
             </div>
           </div>
 
-          <div class="col-auto">
+          <div class="col">
             <img src="./assets/images/home/03 (1).jpg" alt="" />
             <div class="mid three">
               <strong>dr.Jasson Kovalsky</strong>
@@ -288,7 +311,7 @@
             </div>
           </div>
 
-          <div class="col-auto">
+          <div class="col">
             <img src="./assets/images/home/04 (1).jpg" alt="" />
             <div class="mid four">
               <strong>dr.Jasson Kovalsky</strong>
@@ -300,14 +323,15 @@
             </div>
           </div>
         </div>
-        <button>view all doctors</button>
+        <button class="btn">view all doctors >></button>
       </div>
     </section>
 
     <section class="order">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 left">
+
+      <div class="container">
+        <div class="orders">
+          <div class=" left">
             <div class="appointemnts pb-5">
               <h1 class="hours mt-5">24 hours</h1>
               <h1 class="hours">opening our services</h1>
@@ -339,7 +363,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 right ps-4 pb-5">
+          <div class=" right ps-4 pb-5">
             <div class="form-right d-flex flex-column w-75 gap-4">
               <h1 class="mt-5">make an</h1>
               <h1 class="mb-2">appointment now</h1>
@@ -369,9 +393,7 @@
 
             <div class="mid d-flex flex-column gap-1">
               <span>by admin march 24, 2021</span>
-              <strong
-                >globa empoer extenve chanels extensve creat method</strong
-              >
+              <strong>globa empoer extenve chanels extensve creat method</strong>
               <p>
                 complete actuaze centi centrcing colora and shatin without
                 anstaled anding bases aweme meicalpus template.
@@ -385,9 +407,7 @@
 
             <div class="mid d-flex flex-column gap-1">
               <span>by admin march 24, 2021</span>
-              <strong
-                >globa empoer extenve chanels extensve creat method</strong
-              >
+              <strong>globa empoer extenve chanels extensve creat method</strong>
               <p>
                 complete actuaze centi centrcing colora and shatin without
                 anstaled anding bases aweme meicalpus template.
@@ -401,9 +421,7 @@
 
             <div class="mid d-flex flex-column gap-1">
               <span>by admin march 24, 2021</span>
-              <strong
-                >globa empoer extenve chanels extensve creat method</strong
-              >
+              <strong>globa empoer extenve chanels extensve creat method</strong>
               <p>
                 complete actuaze centi centrcing colora and shatin without
                 anstaled anding bases aweme meicalpus template.
@@ -537,5 +555,6 @@
         </div>
       </div>
     </section>
-  </body>
+</body>
+
 </html>

@@ -1,31 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+:root {
+  --color-primary: #0071ef;
+  --white-color:#ecf1f8;
+  --main-white: #fff;
+  --main-transition: all 0.3s ease-in-out;
+  --body-fonts: "Nunito Sans", sans-serif;
+  --title-fonts: "Jost", sans-serif;
+  --secondary-color: #616161;
+  --dark-color:black;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
 }
 
 
-:root {
-    --color-primary: #0071ef;
-    --main-white: #fff;
-    --main-transition: all 0.3s ease-in-out;
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #ecf1f8;
+
+  line-height: 1.7;
+    font-family: var(--body-fonts), sans-serif;
+    font-size: 1rem;
+}
+
+::selection {
+  text-shadow: none;
+  background: var(--primary-color);
+  color: #fff;
 }
 
 a {
     text-decoration: none;
     color: #000;
 }
+b{
+  color: #000;
+}
+
+span,p {
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-fonts);
+  color: var(--dark-color);
+  /* font-style: normal; */
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
 
 .container {
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  font-size: 10px;
+  padding: 8px 8px;
+  color: white;
+  border-radius: 2px;
+align-self: flex-start;
+
+}
+
+.text-section{
+  text-align: center;
+  margin-bottom: 35px;
+}
+.text-section p{
+  font-size: 1.2rem;
+color: black;  
+
+
+}
+
+.text-section h1{
+  font-size: 1.3rem;
+
+font-weight: 700;
+
 }
 
 /* Media query for small screens  */
@@ -107,7 +183,7 @@ a {
 /* end main header */
 
 /* start main-section-title */
-.main-section-title {
+ .main-section-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,6 +204,83 @@ a {
 /* end main-section-title */
 
 /* start nav */
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 33, 85, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 33, 85, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 33, 85, 0.1);
+  background: var(--white-color);
+  z-index: 99;
+  background-color: white;
+}
+
+ .top-header{
+ 
+  background-color: white;
+
+  padding:20px 0px;
+
+}
+
+.top-header .container
+{
+  display: flex;
+  justify-content:space-between ;
+}
+.top-header img{
+height: 36px;
+}
+
+.top-header .contact{
+  display: flex;
+ 
+}
+
+.top-header .contact .col{
+width: 181px;
+  display: flex;
+  gap: 13px;
+}
+
+.top-header .contact .col b {
+  color: black;
+}
+
+.top-header .contact .col img{
+  width: 36px;
+  height:36px;
+}
+
+header .bottem-nav{
+  background-color: var(--color-primary);
+  padding:20px 0px;
+}
+
+
+.bottem-nav ul{
+display: flex;
+gap: 30px;
+}
+.bottem-nav ul a {
+  color: white;
+  font-size: 14px;
+font-weight:500;
+}
+
+
+
+
+
+
+
+
+/*
 nav {
     width: 100%;
     position: fixed;
@@ -204,7 +357,7 @@ nav .nav-footer ul li a {
     font-size: 20px;
     text-decoration: none;
     color: var(--main-white);
-}
+} */
 
 /* end nav */
 
