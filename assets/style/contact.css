@@ -1,5 +1,5 @@
 .contact-us-section {
-    margin-bottom: 7rem;
+    background-color: var(--white-color);
 }
 
 .contact-us-section .container {
@@ -109,8 +109,8 @@
     height: 100%;
 }
 
-.footer-contact {
-    margin: 0;
+.map-section {
+    padding: 0;
 }
 
 
@@ -125,9 +125,11 @@
     .contact-us-section .container .contact-title {
         font-size: 1.4rem;
     }
-    .info-text{
+
+    .info-text {
         font-size: 14px;
     }
+
     .contact-info .informations .info::after {
         left: -3.2%;
     }
@@ -145,4 +147,4 @@
     .contact-us-section .container {
         width: 80%;
     }
-  }
+}
