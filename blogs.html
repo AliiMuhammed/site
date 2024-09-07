@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Blog - Mukti</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Mukti</title>
     <link rel="stylesheet" href="./assets/style/blogs.css" />
     <link rel="stylesheet" href="assets/style/main.css" />
     <link
@@ -13,49 +13,53 @@
   </head>
   <body>
     <!-- main navbar -->
-    <nav>
-      <header>
+    <header>
+      <div class="top-header">
         <div class="container">
-          <img src="./assets/images/nav/logo (1).png" alt="logo" />
-          <ul>
-            <li>
-              <img src="./assets/images/nav/1.png" alt="phone" />
-              <p>
+          <img src="assets/images/home/logo (1).png" alt="">
+          <button class="nav-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="contact">
+            <div class="col">
+              <img src="./assets/images/home/1.png" alt="phone" />
+              <span>
                 Number : <br />
-                <span>+880123456789</span>
-              </p>
-            </li>
-            <li>
-              <img src="./assets/images/nav/2.png" alt="phone" />
-              <p>
+                <b>+880123456789</b>
+              </span>
+            </div>
+  
+            <div class="col"> <img src="./assets/images/home/2.png" alt="phone" />
+              <span>
                 Email : <br />
-                <span>Mukti@gmail.com</span>
-              </p>
-            </li>
-            <li>
-              <img src="./assets/images/nav/3.png" alt="phone" />
-              <p>
+                <b>Mukti@gmail.com</b>
+              </span>
+            </div>
+  
+            <div class="col"><img src="./assets/images/home/3.png" alt="phone" />
+              <span>
                 Address : <br />
-                <span>12 North West New York</span>
-              </p>
-            </li>
-          </ul>
+                <b>12 North West New York</b>
+              </span>
+            </div>
+          </div>
         </div>
-      </header>
-      <div class="nav-footer">
+      </div>
+      <div class="bottem-nav">
         <div class="container">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="departments.html">Departments</a></li>
             <li><a href="doctors.html">Doctors</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="about-us.html">Contact Us</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
-    </nav>
+      </div>
+    </header>
     <!-- main-header -->
     <div class="main-header">
       <div class="container">
@@ -207,5 +211,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
