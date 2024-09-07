@@ -102,9 +102,12 @@ margin-top: 20px;
 
  .specialized .specialisations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 20px;
 margin-top: 50px;
+
+
+width: 100%;
 padding-bottom: 100px;
 }
 
@@ -150,7 +153,7 @@ gap: 5px;
 
 
 .Best-centers .container {
-padding-top: 80px;
+
 }
 
 .Best-centers .icons
@@ -159,6 +162,7 @@ display: flex;
 padding: 0px 30px;
 gap: 5px;
 justify-content: center;
+margin-bottom: 10px;
 }
 
 .Best-centers .icons .icon{
@@ -178,25 +182,33 @@ justify-content: center;
   justify-content: space-between;
 
     background-color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     max-height: 345px;
     
+}
+.Best-centers .speciality-rhinology .right{
+  background-image: url(../images/home/mic2.jpg);
+  background-size: cover;
+  padding: 30px;
 }
 .Best-centers .speciality-rhinology img{
    
   padding: 10px;
- width: 500px;
+ width: 100%;
+ height: 100%;
 }
 
 .Best-centers .speciality-rhinology .left{
   padding: 25px 18px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .Best-centers .left p{
-    font-size: 11px;
+    font-size: 0.8rem;
+    line-height: 1.5;
     font-weight: 400;
     color:rgb(147, 138, 138);
 }
@@ -204,7 +216,10 @@ justify-content: center;
 .Best-centers .speciality-rhinology .services {
   display: grid;
 grid-template-columns: auto auto;
-row-gap: 10px;
+row-gap: 0.8rem;
+}
+.Best-centers .speciality-rhinology .services span{
+  font-size:0.8rem;
 }
 
 .Best-centers .speciality-rhinology .services span::before{
@@ -223,7 +238,52 @@ row-gap: 10px;
 
 
 
+@media only screen and (max-width: 991px) {
 
+  .Best-centers .icons .icon{
+    width: 3rem;
+    padding: 3px;
+  }
+
+  
+.Best-centers .speciality-rhinology{
+  grid-template-columns: 50% 50%;
+}
+
+
+.Best-centers .speciality-rhinology .left{
+  padding: 15px 11px;
+gap: 0.5rem;
+
+}
+
+.Best-centers .left p{
+  font-size: 0.6rem;
+  line-height: 1.3;
+}
+
+.Best-centers .speciality-rhinology .services{
+  row-gap: 0.2rem;
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .Best-centers .icons .icon{
+    width: 1.8rem;
+    padding: 0.5px;
+  }
+
+
+  .Best-centers .speciality-rhinology{
+    grid-template-columns: 1fr;
+
+  }
+  
+
+}
 
 
 
@@ -281,20 +341,28 @@ row-gap: 10px;
 
 } 
 
+@media only screen and (max-width: 991px) {
+  .info{
+    display: none;
+  }
+}
+
 /*********doctors**********/
 
 .Doctors .container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+
+
 }
 
 .Doctors img{
-width: 230px;
+
 
 }
 .Doctors .docs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
 justify-content: space-between;
+gap: 1.3rem;
 }
 .Doctors .docs .col{
   display: flex;
@@ -335,7 +403,7 @@ flex-direction: column;
 
 
 .Doctors .bottom{
-    width: 170px;
+    
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -458,6 +526,12 @@ border-bottom: none;
 
 }
 
+@media only screen and (max-width: 991px) {
+  .order{
+    display: none;
+  }
+}
+
 
 /*****news feed*********/
  
@@ -471,7 +545,7 @@ border-bottom: none;
 
 .news-feed .cards{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   justify-content: space-between;
  
@@ -532,9 +606,23 @@ border-bottom: none;
   padding: 50px 0px;
 }
 .logos .logs{
-display: flex;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
 gap: 2em;
-justify-content: space-between
+justify-content: center;
+
+
+}
+
+.logos .logs .col{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .logos .logs{
+ 
+
+  }
 }
 
  
@@ -557,30 +645,42 @@ justify-content: space-between
   font-size: 27px;
   color: white;
 }
-.join .col-left{
+
+.join .input-filed{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  background-color: white;
-}
-
-.join .input {
-  align-items: start;
-  
-  height: px;
+  justify-content: center;
+  position: relative;
   background-color: white;
 
-gap: 150px;
 }
 
+ .join .input-filed input {
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    border: none;
 
-.join .input i {
+} 
+
+
+ .join .input-filed i {
   color: var(--color-primary);
+  background-color: white;
+  padding-top: 15px ;
+  padding-left: 15px;
 }
 
 
 .join  button {
-  color: white;
-
+  background-color: var(--color-primary);
+  color: var(--white-color);
+  padding: 1rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  width: 15rem;
 }
 
 
